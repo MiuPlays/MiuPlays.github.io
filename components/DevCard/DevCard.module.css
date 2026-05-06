@@ -1,0 +1,83 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(232, 93, 117, 0.4);
+  box-shadow: 0 12px 40px rgba(232, 93, 117, 0.1);
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--bg3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--accent2);
+  border: 1px solid var(--border);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.bio {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.featuredLabel {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.featuredGame {
+  font-size: 0.82rem;
+  color: var(--accent3);
+  font-weight: 700;
+}
+
+.readBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.2s;
+  text-decoration: none;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.readBtn:hover {
+  border-color: var(--accent2);
+  color: var(--accent2);
+}
