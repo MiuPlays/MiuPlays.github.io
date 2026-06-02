@@ -61,6 +61,11 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+  order: 2; /* Text on right side */
+}
+
+.right {
+  order: 1; /* Image on left side */
 }
 
 .tag {
@@ -96,7 +101,7 @@
 
 .title span {
   color: var(--accent);
-  display: block;
+  /* display: block; */
 }
 
 .subtitle {
@@ -182,6 +187,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .ctaBox {
@@ -220,13 +227,73 @@
   border-color: var(--accent2);
 }
 
+.heroImage {
+  width: 100%;
+  height: auto;
+  /* max-width: 450px; */
+  border-radius: 12px;
+  object-fit: contain;
+  animation: floatUp 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Tablet: Image slightly smaller */
+@media (max-width: 1024px) {
+  .content {
+    gap: 60px;
+  }
+  
+  /* .heroImage {
+    max-width: 400px;
+  } */
+}
+
+/* Mobile: Image at top, text below */
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 40px;
   }
+  
   .hero {
     min-height: auto;
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .left {
+    order: 2;
+  }
+  
+  .right {
+    display: flex !important;
+    order: 1; /* Image at top */
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .heroImage {
+    /* max-width: 280px; */
+    animation: floatUp 4s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 640px) {
+  .right {
+    margin-bottom: 16px;
+  }
+  
+  .heroImage {
+    max-width: 240px;
   }
 }

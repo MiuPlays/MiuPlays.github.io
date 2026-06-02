@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 :root {
   --bg: #0a0a0f;
@@ -10,14 +10,17 @@
   --accent: #7c6af7;
   --accent2: #e85d75;
   --accent3: #4ee8c0;
+  --accent4: #9c8dff;
   --text: #f0eef8;
-  --text-muted: #7a7898;
+  --text-muted: #9c9ab9;
   --text-dim: #4a4868;
-  --font-display: 'Syne', sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Geist', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -59,9 +62,11 @@ img {
 ::-webkit-scrollbar {
   width: 4px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg2);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
   border-radius: 2px;

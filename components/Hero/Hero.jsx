@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -11,15 +12,14 @@ export default function Hero() {
         <div className={styles.left}>
           <span className={styles.tag}>Independent Gaming</span>
           <h1 className={styles.title}>
-            Miu
-            <span>Plays</span>
+            Miu<span> Plays</span>
           </h1>
           <p className={styles.subtitle}>
-            Just me playing games I enjoy. No hype, no sponsorships — honest gameplay from someone who actually cares about games.
+            Just me playing games I enjoy. Honest gameplay from someone who actually cares about games.
           </p>
           <div className={styles.buttons}>
-            <a
-              href="https://youtube.com"
+
+            <a href="https://www.youtube.com/@MiuPlayGames"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.btnPrimary}
@@ -40,11 +40,14 @@ export default function Hero() {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.ctaBox}>
-            <strong>Want me to play your game?</strong>
-            <p>If you're an indie developer with a game you'd like featured, reach out directly.</p>
-            <a href="mailto:kasunmiu@gmail.com">kasunmiu@gmail.com</a>
-          </div>
+          <Image
+            src="/miuplays.png"
+            alt="Miu Plays"
+            width={500}
+            height={500}
+            priority
+            className={styles.heroImage}
+          />
         </div>
       </div>
     </section>

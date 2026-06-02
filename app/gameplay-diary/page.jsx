@@ -22,7 +22,7 @@ export default function GameplayDiaryPage() {
     <div className={styles.page}>
       <div className={styles.pageHeader}>
         <span className={styles.eyebrow}>// all games</span>
-        <h1>Gameplay Diary</h1>
+        <h1>{/* Gameplay Diary */} [ ⚠ Under Construction ]</h1>
         <p>Every game I've played, captured, or looked at. Honest takes, no fluff.</p>
       </div>
 

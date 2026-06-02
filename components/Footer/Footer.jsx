@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={styles.brand}>
           <div className={styles.logo}>Miu<span>Plays</span></div>
           <p>Just me playing games I enjoy.</p>
-          <a href="mailto:kasunmiu@gmail.com" className={styles.email}>kasunmiu@gmail.com</a>
+          {/* <a href="mailto:kasunmiu@gmail.com" className={styles.email}>kasunmiu@gmail.com</a> */}
         </div>
         <nav className={styles.links}>
           <Link href="/">Home</Link>

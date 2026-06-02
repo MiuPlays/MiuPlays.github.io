@@ -17,7 +17,7 @@ export default function DeveloperPage({ params }) {
   if (!dev) {
     return (
       <div className={styles.notFound}>
-        <h1>Developer not found</h1>
+        <h1>{/* Developer not found */} [ ⚠ Under Construction ]</h1>
         <p>This spotlight doesn't exist.</p>
         <Link href="/developer-spotlight" className={styles.back}>← Back to spotlights</Link>
       </div>

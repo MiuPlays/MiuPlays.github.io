@@ -11,10 +11,10 @@ export default function AboutPage() {
       <h1>About</h1>
 
       <p className={styles.intro}>
-        I'm <em>Kasun</em>. I play games I enjoy.
+        I'm <em>Kasun Miuranga</em>. I play games I enjoy.
       </p>
 
-      <div className={styles.body}>
+      {/* <div className={styles.body}>
         <p>
           I've always gravitated toward indie games — the kind made by small teams or solo developers who had something specific to express. There's a kind of honesty in those games that you don't always find in big productions.
         </p>
@@ -24,9 +24,9 @@ export default function AboutPage() {
         <p>
           I also care about the people making these games. Most indie developers are pouring everything into their work and not getting nearly enough attention for it. Covering their games is one way I can help, even a little.
         </p>
-      </div>
+      </div> */}
 
-      <div className={styles.values}>
+      {/* <div className={styles.values}>
         <div className={styles.value}>
           <h3>Honest play</h3>
           <p>No scripts, no hype. I play through games the same way I would if no one was watching.</p>
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <h3>No noise</h3>
           <p>I don't post constantly. I post when I have something worth sharing.</p>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.contact}>
         <span>Get in touch</span>
