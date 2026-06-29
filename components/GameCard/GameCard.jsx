@@ -19,11 +19,21 @@ export default function GameCard({ game }) {
         <p className={styles.desc}>{description}</p>
         <div className={styles.tags}>
           {tags.map(tag => (
-            <span key={tag} className={`${styles.tag} ${styles.genre}`}>{tag}</span>
+            <span key={tag} className={`${styles.tag} ${styles.genre}`}>
+              {tag}
+            </span>
           ))}
-          {platform && <span className={styles.tag}>{platform}</span>}
+
+          {platform?.map(p => (
+            <span key={p} className={styles.tag}>
+              {p}
+            </span>
+          ))}
+
           {status && (
-            <span className={`${styles.tag} ${styles.status} ${statusClass}`}>{status}</span>
+            <span className={`${styles.tag} ${styles.status} ${statusClass}`}>
+              {status}
+            </span>
           )}
         </div>
         {videoUrl && (

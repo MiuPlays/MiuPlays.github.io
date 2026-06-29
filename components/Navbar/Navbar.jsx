@@ -7,7 +7,7 @@ import styles from './Navbar.module.css';
 const links = [
   { href: '/', label: 'Home' },
   { href: '/gameplay-diary', label: 'Gameplay Diary' },
-  { href: '/developer-spotlight', label: 'Devs' },
+ /*  { href: '/developer-spotlight', label: 'Devs' }, */
   { href: '/submit-game', label: 'Submit Game' },
   { href: '/about', label: 'About' },
 ];

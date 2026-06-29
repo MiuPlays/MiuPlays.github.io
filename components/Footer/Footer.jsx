@@ -13,7 +13,7 @@ export default function Footer() {
         <nav className={styles.links}>
           <Link href="/">Home</Link>
           <Link href="/gameplay-diary">Gameplay Diary</Link>
-          <Link href="/developer-spotlight">Developer Spotlight</Link>
+          {/* <Link href="/developer-spotlight">Developer Spotlight</Link> */}
           <Link href="/submit-game">Submit Game</Link>
           <Link href="/about">About</Link>
         </nav>
